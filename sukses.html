@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembayaran Berhasil</title>
+  <style>
+    body {
+      background-color: #e0f7e9;
+      font-family: 'Segoe UI', sans-serif;
+      color: #2e7d32;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .emoji {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji">✅</div>
+  <h1>Pembayaran Berhasil!</h1>
+  <p>Terima kasih telah melakukan pembayaran.<br />Anda akan diarahkan kembali ke aplikasi.</p>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "batiksekarniti://success"; // Ganti sesuai deeplink kamu
+    }, 3000);
+  </script>
+</body>
+</html>

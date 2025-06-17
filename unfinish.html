@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembayaran Dibatalkan</title>
+  <style>
+    body {
+      background-color: #fff8e1;
+      font-family: 'Segoe UI', sans-serif;
+      color: #ff8f00;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .emoji {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji">⚠️</div>
+  <h1>Pembayaran Dibatalkan</h1>
+  <p>Anda membatalkan pembayaran. Silakan coba lagi kapan saja.</p>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "batiksekarniti://unfinish";
+    }, 3000);
+  </script>
+</body>
+</html>
